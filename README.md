@@ -1,2 +1,2 @@
 # calculator
-I have design a calculator with multiple arithmetic operation.
+I have designed a calculator with multiple arithmetic operation.
