@@ -1,9 +1,9 @@
 # calculator
  
-![Application will work with different arithmatic operations]
-![Trigonometric Operations.]
-![Factorials]
-![Logarithm]
+![Application will work with different arithmatic operations]()
+![Trigonometric Operations.]()
+![Factorials]()
+![Logarithm]()
 ![Simple mathematical operations]
 ![Power]
 
