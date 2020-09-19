@@ -26,9 +26,9 @@ int power(int num1,int num);
   operation[1] = subtraction;//choose - for sub
   operation[2] = multiplication;//choose * for multiplication
   operation[3] = division;// choose / for divide
-  operation[5] = logarithm;//choose log for log value1 to base value2
-  operation[6] = root;//choose root to find the root value
-  operation[4] = power;//choose ^ for num1 power num 2
+  operation[4] = logarithm;//choose log for log value1 to base value2
+  operation[5] = root;//choose root to find the root value
+  operation[6] = power;//choose ^ for num1 power num2
 
 
 
