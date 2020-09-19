@@ -36,7 +36,7 @@ void test_div(void)
 
 
 
-void test_log()
+void test_log(){}
 int main(void)
 {
 
