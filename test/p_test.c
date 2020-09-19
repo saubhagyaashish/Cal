@@ -11,20 +11,20 @@ void tearDown(){}
 
 void test_calculator_add(void)
 {
-  TEST_ASSERT_EQUAL(0, calculator(0,0,0));
-  TEST_ASSERT_EQUAL(1, calculator(6,-5,0));
-    TEST_ASSERT_EQUAL(20, calculator(4,5,2));
+  TEST_ASSERT_EQUAL(0,calculator(0,0,0));
+  TEST_ASSERT_EQUAL(1,calculator(6,-5,0));
+    TEST_ASSERT_EQUAL(20,calculator(4,5,2));
   
 }
 void test_calculator_sub(void)
 {
-  TEST_ASSERT_EQUAL(-7, calculator(2,9,1));
-  TEST_ASSERT_EQUAL(7, calculator(9,2,1));
+  TEST_ASSERT_EQUAL(-7,calculator(2,9,1));
+  TEST_ASSERT_EQUAL(7,calculator(9,2,1));
 }
 void test_multi(void)
 {
-  TEST_ASSERT_EQUAL(-25, calculator(-5,5,2));
-  TEST_ASSERT_EQUAL(0, matrix(0));
+  TEST_ASSERT_EQUAL(-25,calculator(-5,5,2));
+  TEST_ASSERT_EQUAL(0,matrix(0));
 }
 
 void test_div(void)
