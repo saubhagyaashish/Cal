@@ -4,7 +4,7 @@ test/p_test.c
 
 INC = -Iunity\
 -Iinc\
--Itest
+-Itest\
 
 PROJECT_NAME = Calculator.out
 
