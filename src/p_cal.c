@@ -1,6 +1,6 @@
 #include "p_cal.h"
 #include "math.h"
-#include"stdio.h"
+#include "stdio.h"
 
 
 
@@ -67,28 +67,7 @@ int divide(int num1, int num2)
     return 0;
 }
 
-int power(int num1, int num2)
-{
-   int intermidiate;
-   intermidiate=pow(num1,num2);
-   return(intermidiate);
-}
 
-int logarithm(int num1, int num2) {
-  int intermidiate;
-  intermidiate=log(num1)/log(num2);
-  return(intermidiate);
-}
-int root(int num1, int num2) {
-    int intermidiate;
-  if (num2 != 0)
-    {
-        intermidiate=pow(num1,(1/num2));
-        return(intermidiate);
-
-    }
-  else
-    return 0;}
 
 float advance_calci(float num1,int operator)
 {
@@ -207,6 +186,28 @@ float exponential(float num1)
    return(value);
 
 }
+int power(int num1, int num2)
+{
+   int intermidiate;
+   intermidiate=pow(num1,num2);
+   return(intermidiate);
+}
+
+int logarithm(int num1, int num2) {
+  int intermidiate;
+  intermidiate=log(num1)/log(num2);
+  return(intermidiate);
+}
+int root(int num1, int num2) {
+    int intermidiate;
+  if (num2 != 0)
+    {
+        intermidiate=pow(num1,(1/num2));
+        return(intermidiate);
+
+    }
+  else
+    return 0;}
 float modulous(float num1)
 {
    float value;
