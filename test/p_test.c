@@ -1,6 +1,4 @@
 
-#include <CUnit/CUnity.h>
-
 /* Modify these two lines according to the project */
 #include <p_cal.h>
 #define PROJECT_NAME    "Calculator"
