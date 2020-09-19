@@ -1,5 +1,5 @@
 
-#include <CUnit/CUnit.h>
+#include <CUnit/CUnity.h>
 
 /* Modify these two lines according to the project */
 #include <p_cal.h>
