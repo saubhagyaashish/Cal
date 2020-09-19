@@ -13,7 +13,7 @@
 
 
 # UML
- (https://github.com/99002463/calculator/blob/master/UML/class.png)
+ ![class](https://github.com/99002463/calculator/blob/master/UML/class.png)
 
 
 
