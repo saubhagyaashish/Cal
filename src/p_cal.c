@@ -41,23 +41,23 @@ int power(int num1,int num);
 
 int add(int num1, int num2)
 {
-  int intermidiate;
-   intermidiate=num1-num2;
-   return(intermidiate);
+  int value;
+   value=num1-num2;
+   return(value);
 }
 
 int subtract(int num1, int num2)
 {
-int intermidiate;
-   intermidiate=num1-num2;
-   return(intermidiate);
+int value;
+   value=num1-num2;
+   return(value);
 }
 
 int multiply(int num1, int num2)
 {
- int intermidiate;
-   intermidiate=num1*num2;
-   return(intermidiate);
+ int value;
+   value=num1*num2;
+   return(value);
 }
 
 int divide(int num1, int num2)
@@ -231,17 +231,17 @@ float factorial(float num1)
   return (num1 * factorial(num1-1));
 }
 int matrix(){
-    int matrixs_sum();
+    int matrix_sum();
     int matrix_sub();
-    int matrix_mul();
-    int (*opm[3])();
-    opm[0]=matrixs_sum;
-    opm[1]=matrix_sub;
-    opm[3]=matrix_mul;
+
+    int (*opmatrix[3])();
+    opmatrix[0]=matrix_sum;
+    opmatrix[1]=matrix_sub;
+  
     return 0;
 }
 
-int matrixs_sum()
+int matrix_sum()
 {
 
 int row, coloum;
@@ -308,52 +308,6 @@ for(index_r = 0; index_r < row; index_r++)
 for(index_c = 0; index_c < coloum; index_c++)
 printf("%d", mat3[index_r][index_c]);
 printf("\n");
-}
-
-return 0;
-}
-
-int matrix_mul()
-{
-int row, coloum, row1, column1, index_r, index_c, index, sum = 0;
-int mat1[10][10], mat2[10][10], mat3[10][10];
-
-printf("Enter number of rows and columns of mat1 matrix\n");
-scanf("%d%d", &row, &coloum);
-printf("Enter elements of matrix a\n");
-
-printf("\nEnter number of rows and columns of mat2 matrix\n");
-scanf("%d%d", &row1, &column1);
-
-if (coloum != row1)
-printf("\nThe matrices can’t be multiplied with each other.\n");
-else
-{
-printf("\nEnter elements of matrix2\n");
-
-for (index_r = 0; index_r < row1; index_r++)
-for (index_c = 0; index_c < column1; index_c++)
-scanf("%d", &mat2[index_r][index_c]);
-
-for (index_r = 0; index_r < row; index_r++) {
-for (index_c = 0; index_c < column1; index_c++) {
-for (index = 0; index < row1; index++) {
-sum = sum + mat1[index_r][index]*mat2[index][index_c];
-}
-
-mat3[index_r][index_c] = sum;
-sum = 0;
-}
-}
-
-printf("\nProduct of the matrices:\n");
-
-for (index_r = 0; index_r < row; index_r++) {
-for (index_c = 0; index_c < column1; index_c++)
-printf("%d\t", mat3[index_r][index_c]);
-
-printf("\n");
-}
 }
 
 return 0;
