@@ -11,9 +11,9 @@ void tearDown(){}
 
 void test_calculator_add(void)
 {
-  TEST_ASSERT_EQUAL(0,calculator(0,0,0));
+
   TEST_ASSERT_EQUAL(1,calculator(6,-5,0));
-    TEST_ASSERT_EQUAL(20,calculator(4,5,2));
+  TEST_ASSERT_EQUAL(20,calculator(4,5,2));
   
 }
 void test_calculator_sub(void)
@@ -33,12 +33,7 @@ void test_div(void)
    TEST_ASSERT_EQUAL(2,calculator(52,26,4));
    TEST_ASSERT_EQUAL(0,calculator(158,58,4));
 }
-void test_power(void)
-{
-  TEST_ASSERT_EQUAL(0,calculator(5,2,4));
-   TEST_ASSERT_EQUAL(2,calculator(52,26,4));
-   TEST_ASSERT_EQUAL(0,calculator(158,58,4));
-}
+
 
 
 void test_log()
