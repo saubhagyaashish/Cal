@@ -14,6 +14,8 @@ void test_calculator_add(void)
 
   TEST_ASSERT_EQUAL(1,calculator(6,-5,0));
   TEST_ASSERT_EQUAL(20,calculator(4,5,2));
+  TEST_ASSERT_EQUAL(9,calculator(4,5,0));
+  TEST_ASSERT_EQUAL(100,calculator(45,55,0));
   
 }
 void test_calculator_sub(void)
