@@ -39,7 +39,7 @@ int power(int num1,int num);
 }
 
 
-int addtion(int num1, int num2)
+int addition(int num1, int num2)
 {
   int value;
    value=num1-num2;
