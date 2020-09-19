@@ -1,6 +1,6 @@
 #TEST CASES                               #EXPECTED O/P                                                                             #ACTUAL O/P
 
-calculator(4,5,0));                           9                                                                                         9
+* calculator(4,5,0));                           * 9                                                                                         * 9
 
 calculator(6,-5,0));                          1                                                                                         1
 
