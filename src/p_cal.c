@@ -1,6 +1,7 @@
-#include "p_cal.h"
 #include "math.h"
 #include "stdio.h"
+#include "p_cal.h"
+
 
 
 
@@ -188,22 +189,22 @@ float exponential(float num1)
 }
 int power(int num1, int num2)
 {
-   int intermidiate;
-   intermidiate=pow(num1,num2);
-   return(intermidiate);
+   int value;
+   value=pow(num1,num2);
+   return(value);
 }
 
 int logarithm(int num1, int num2) {
-  int intermidiate;
-  intermidiate=log(num1)/log(num2);
-  return(intermidiate);
+  int value;
+  value=log(num1)/log(num2);
+  return(value);
 }
 int root(int num1, int num2) {
-    int intermidiate;
+    int value;
   if (num2 != 0)
     {
-        intermidiate=pow(num1,(1/num2));
-        return(intermidiate);
+        value=pow(num1,(1/num2));
+        return(value);
 
     }
   else
