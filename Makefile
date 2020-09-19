@@ -1,12 +1,12 @@
 SRC = unity/unity.c\
-src/calculator.c\
-test/test_calculator.c
+src/p_cal.c\
+test/p_test.c
 
 INC = -Iunity\
 -Iinc\
 -Itest
 
-PROJECT_NAME = calculator.out
+PROJECT_NAME = Calculator.out
 
 # Output directory
 BUILD = build
