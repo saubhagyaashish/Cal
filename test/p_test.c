@@ -11,7 +11,6 @@ void tearDown(){}
 
 void test_calculator_add(void)
 {
-  TEST_ASSERT_EQUAL(0, calculator(0,0,0));
    TEST_ASSERT_EQUAL(9, calculator(4,5,0));
     TEST_ASSERT_EQUAL(5874, calculator(5869,5,0));
     TEST_ASSERT_EQUAL(10532, calculator(4943,5589,0));
