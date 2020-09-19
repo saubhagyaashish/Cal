@@ -2,7 +2,7 @@
 #include <CUnit/CUnit.h>
 
 /* Modify these two lines according to the project */
-#include <p_main..h>
+#include <p_cal.h>
 #define PROJECT_NAME    "Calculator"
 
 /* Prototypes for all the test functions */
