@@ -73,7 +73,6 @@ static const char PROGMEM UnityStrDetail2Name[]            = " " UNITY_DETAIL2_N
 /*-----------------------------------------------
  * Pretty Printers & Test Result Output Handlers
  *-----------------------------------------------*/
-
 /*-----------------------------------------------*/
 /* Local helper function to print characters. */
 static void UnityPrintChar(const char* pch)
