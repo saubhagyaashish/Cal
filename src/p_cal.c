@@ -10,10 +10,10 @@
 int calculator(int num1,int num2,int operator)
 {
 
-int add(int num1, int num2);
-int subtract(int num1, int num2);
-int multiply(int num1, int num2);
-int divide(int num1, int num2);
+int addition(int num1, int num2);
+int subtraction(int num1, int num2);
+int multiplication(int num1, int num2);
+int division(int num1, int num2);
 int root(int num1,int num);
 int logarithm(int num1,int num);
 int power(int num1,int num);
@@ -22,10 +22,10 @@ int power(int num1,int num);
   int  result;
   int (*operation[7])(int, int);
 
-  operation[0] = add;//choose + for add
-  operation[1] = subtract;//choose - for sub
-  operation[2] = multiply;//choose * for multiplication
-  operation[3] = divide;// choose / for divide
+  operation[0] = addition;//choose + for add
+  operation[1] = subtraction;//choose - for sub
+  operation[2] = multiplication;//choose * for multiplication
+  operation[3] = division;// choose / for divide
   operation[5] = logarithm;//choose log for log value1 to base value2
   operation[6] = root;//choose root to find the root value
   operation[4] = power;//choose ^ for num1 power num 2
@@ -39,28 +39,28 @@ int power(int num1,int num);
 }
 
 
-int add(int num1, int num2)
+int addtion(int num1, int num2)
 {
   int value;
    value=num1-num2;
    return(value);
 }
 
-int subtract(int num1, int num2)
+int subtraction(int num1, int num2)
 {
 int value;
    value=num1-num2;
    return(value);
 }
 
-int multiply(int num1, int num2)
+int multiplication(int num1, int num2)
 {
  int value;
    value=num1*num2;
    return(value);
 }
 
-int divide(int num1, int num2)
+int division(int num1, int num2)
 {
   if (num2 != 0)
     return (num1 / num2);
