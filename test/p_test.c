@@ -1,64 +1,63 @@
 
-/* Modify these two lines according to the project */
-#include <p_cal.h>
-#define PROJECT_NAME    "Calculator"
+#include "unity.h"
+#include "p_cal.h"
 
-/* Prototypes for all the test functions */
-void test_add(void);
-void test_subtract(void);
-void test_multiply(void);
-void test_divide(void);
 
-/* Start of the application test */
-int main() {
-/* Note: Do not edit START*/
-  /*Initialize and setup the Test Framework */
-  if (int CUE_SUCCESS != CU_initialize_registry())
-    return CU_get_error();
-  CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
-/* Note: Do not edit END */
+
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+
+void test_calculator_add(void)
+{
+  TEST_ASSERT_EQUAL(0, calculator(0,0,0));
+   TEST_ASSERT_EQUAL(9, calculator(4,5,0));
+    TEST_ASSERT_EQUAL(5874, calculator(5869,5,0));
+    TEST_ASSERT_EQUAL(10532, calculator(4943,5589,0));
+    TEST_ASSERT_EQUAL(339787112, calculator(889856,338897256,0));
   
-
-
-
-/* Note: Do not edit START*/
-  /* Setup Test Framework to output the result to Screen */
-  CU_basic_set_mode(CU_BRM_VERBOSE);
+}
+void test_calculator_sub(void)
+{
   
-  /* run the unit test framework*/
-  CU_basic_run_tests();
+  TEST_ASSERT_EQUAL(-1, calculator(4,5,1));
+    TEST_ASSERT_EQUAL(-10, calculator(44,54,1));
+    TEST_ASSERT_EQUAL(0, calculator(78956,78956,1));
+    TEST_ASSERT_EQUAL(7681765, calculator(7896354,214589,1));
   
-  /* Cleaning the Resources used by Unit test framework */
-  CU_cleanup_registry();
-/* Note: Do not edit END */
-  return 0;
+}
+void test_multi(void)
+{
+   TEST_ASSERT_EQUAL(3135, calculator(55,57,2));
+   TEST_ASSERT_EQUAL(-37872, calculator(-48,789,2));
 }
 
-/* Write all the test functions */ 
-void test_add(void) {
-  CU_ASSERT(30 == addition(10, 20));
-  
-  /* Dummy fail*/
-  CU_ASSERT(1500 == addition(750, 7500));
+void test_div(void)
+{
+  TEST_ASSERT_EQUAL(0,calculator(7,5,3));
+   TEST_ASSERT_EQUAL(2,calculator(52,26,3));
+   TEST_ASSERT_EQUAL(0,calculator(158,58,3));
+   TEST_ASSERT_EQUAL(589,calculator(464721,789,3));
+}
+void test_power(void)
+{
+  TEST_ASSERT_EQUAL(25,calculator(5,2,6));
+   TEST_ASSERT_EQUAL(100000000,calculator(100,4,6));
+   TEST_ASSERT_EQUAL(900,calculator(30,3,6));
 }
 
-void test_subtract(void) {
-  CU_ASSERT(-3 == subtracttion(0, 3));
-  
-  /* Dummy fail*/
-  CU_ASSERT(1 == subtracttion(1000, 900));
-}
 
-void test_multiply(void) {
-  CU_ASSERT(0 == multiplication(1, 0));
-  
-  /* Dummy fail*/
-  CU_ASSERT(2 == multiplication(2, 5));
-}
+void test_log()
+int main(void)
+{
 
-void test_divide(void) {
-  CU_ASSERT(0 == division(1, 0));
-  
-  /* Dummy fail*/
-  CU_ASSERT(3 == division(2, 2));
+  UNITY_BEGIN();
+
+/* Run Test functions */
+  RUN_TEST(test_calculator_add);
+  RUN_TEST(test_calculator_sub);
+  RUN_TEST(test_multi);
+
+  return UNITY_END();
 }
