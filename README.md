@@ -1,10 +1,12 @@
 # calculator
  
-* Application will work with different arithmatic operations
-* Trigonometric Operations,
-* Factorials
-* Logarithm.Simple mathematical operations
+* Application will work with different arithmatic operations.
+* Trigonometric Operations like sin,cos,tan,cot,sec,cosec.
+* Factorials.
+* Logarithm.
+* Simple mathematical operations like addition,subtraction,division,multiplication.
 * Power function.
+* Matrix operations like matrix sum and matrix subtraction.
 
 
 
