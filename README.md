@@ -1,23 +1,18 @@
 # calculator
  
-![Application will work with different arithmatic operations]()
-![Trigonometric Operations.]()
-![Factorials]()
-![Logarithm]()
-![Simple mathematical operations]
-![Power]
+* Application will work with different arithmatic operations
+* Trigonometric Operations,
+* Factorials
+* Logarithm.Simple mathematical operations
+* Power function.
 
 
 
 
-
-
-
-
-
-
-
-
+## GitHub Actions
+* Build using Make for CI
+* Unit tests with unity
+* Static code analysis using cppcheck
 
 
 ![C/C++ CI](https://github.com/99002463/calculator/workflows/C/C++%20CI/badge.svg)      
