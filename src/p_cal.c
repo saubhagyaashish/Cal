@@ -86,18 +86,20 @@ float advance_calci(float num1,int operator)
    
 
     float result;
-   float (*ope[12])(float);
-    ope[0] = square_root;
-  ope[1] = log_to_10;
-  ope[2] = natural_log;
-  ope[7] = factorial;
-  ope[8] = one_by;
-  ope[9] = modulous;
-  ope[10]= exponential;
-  ope[11]= cos_fun;
-  ope[3] = sine_fun;
-  ope[4] = sec_fun;
-  ope[5] = cosec_fun;
+  
+  float (*ope[11])(float);
+  ope[0] = one_by;
+  ope[1] = square_root;
+  ope[2] = log_to_10;
+  ope[3] = natural_log;
+  ope[4] = factorial;
+
+  ope[5] = modulous;
+  ope[6]= exponential;
+  ope[7]= cos_fun;
+  ope[8] = sine_fun;
+  ope[9] = sec_fun;
+  ope[10] = cosec_fun;
  
     result = ope[operator](num1);
     return result;
@@ -234,10 +236,9 @@ int matrix(){
     int matrix_sum();
     int matrix_sub();
 
-    int (*opmatrix[3])();
+    int (*opmatrix[2])();
     opmatrix[0]=matrix_sum;
     opmatrix[1]=matrix_sub;
-  
     return 0;
 }
 
