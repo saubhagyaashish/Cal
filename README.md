@@ -1,5 +1,12 @@
 # calculator
-I have designed a calculator with multiple arithmetic operation.
+ 
+##Application will work with different arithmatic operations
+##Trigonometric Operations.
+##Factorials
+##Logarithm
+##Simple mathematical operations
+##Power
+
 
 
 
