@@ -34,21 +34,6 @@
     * The user can store a value in memory for later use
     * When the user enters an expression with more than two operands, operator precedence is applied.
 
-
-
-
-
-
-# UML
- ![usecase](https://github.com/99002463/calculator/blob/master/UML/usecase.png)
- ![class](https://github.com/99002463/calculator/blob/master/UML/class.png)
- ![sequence](https://github.com/99002463/calculator/blob/master/UML/sequence.png)
- ![model](https://github.com/99002463/calculator/blob/master/UML/model.png)
- ![tread](https://github.com/99002463/calculator/blob/master/UML/thread.png)
-
-
-
-
 ## GitHub Actions
 * Build using Make for CI
 * Unit tests with unity
@@ -64,4 +49,14 @@
 
 
 ![Unit testing](https://github.com/99002463/calculator/workflows/Unit%20testing/badge.svg)
+
+
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ef868a9ce5a442c2b3e3b1611fe107ba)](https://app.codacy.com/manual/99002463/calculator?utm_source=github.com&utm_medium=referral&utm_content=99002463/calculator&utm_campaign=Badge_Grade_Dashboard)
+
+
+
+## Github Details
+    * https://github.com/99002463/calculator:
+    * By:SANJAT CHAND
 
